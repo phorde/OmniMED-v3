@@ -104,8 +104,7 @@ const sedoanalgesiaData = [
     {
         "id": "fentanil_sedacao",
         "nome": "Fentanil",
-        "diluicao": "Diluir 4 ampolas (40ml) de Fentanil (50mcg/ml) em 160ml de SF 0,9%.",
-        "concentracaoFinal": "10 mcg/mL",
+    "diluicao": "Fentanil (50 µg/mL) 50 mL + 50 mL SF 0,9% EV [ 1 mL = 25 µg ]"        "concentracaoFinal": "10 mcg/mL",
         "infusaoMlH": "Iniciar a 5-8 ml/h.",
         "alternativa": "OU 4 frascos (2000mcg) PURO, em Bomba de Infusão (BIC).",
         "doseFormula": "0,7 a 2 mcg/kg/h",
@@ -116,8 +115,7 @@ const sedoanalgesiaData = [
     {
         "id": "midazolam_sedacao",
         "nome": "Midazolam",
-        "diluicao": "Diluir 4 ampolas (40ml) de Midazolam (5mg/ml) em 60ml de SF 0,9%.",
-        "concentracaoFinal": "2 mg/mL",
+    "diluicao": "Midazolam (5 mg/mL) 20 mL + 80 mL SF 0,9% EV [ 1 mL = 1 mg ]"        "concentracaoFinal": "2 mg/mL",
         "infusaoMlH": "Iniciar a 5-8 ml/h.",
         "doseFormula": "0,02 a 0,2 mg/kg/h",
         "doseMin": 0.02,
@@ -128,13 +126,24 @@ const sedoanalgesiaData = [
     {
         "id": "cetamina_sedacao",
         "nome": "Cetamina",
-        "diluicao": "Diluir 1 ampola (10ml) de Cetamina (50mg/ml) em 90ml de SG 5%.",
-        "concentracaoFinal": "5 mg/mL",
+    "diluicao": "Cetamina (50 mg/mL) 10 mL + 240 mL SF 0,9% EV [ 1 mL = 2 mg ]"        "concentracaoFinal": "5 mg/mL",
         "infusaoMlH": "Iniciar EV em BIC a 3-6 ml/h.",
         "doseFormula": "0,3 a 1 mg/kg/h",
         "doseMin": 0.3,
         "doseMax": 1,
         "unidade": "mg"
+    }
+      ,
+    {
+      "id": "dexmedetomidina_sedacao",
+      "nome": "Dexmedetomidina",
+      "diluicao": "Dexmedetomidina (100 µg/mL) 2 mL + 48 mL SF 0,9% EV [ 1 mL = 4 µg ]",
+      "infusaoMlH": "Iniciar a 0.5-1 mL/h.",
+      "alternativa": "",
+      "doseFormula": "0,5 a 1,4 µg/kg/h",
+      "doseMin": 0.5,
+      "doseMax": 1.4,
+      "unidade": "µg"
     }
 ];
 
