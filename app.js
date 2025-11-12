@@ -14,6 +14,17 @@ const medicamentosIOT = [
         "preferredIn": ["hic_tce", "doenca_cv"]
     },
     {
+        "id": "lidocaina",
+        "nome": "Lidocaína 2%",
+        "categoria": "1 PRÉ-MEDICAÇÃO",
+        "concentracaoTexto": "20 mg/mL",
+        "concentracaoMgMl": 20,
+        "doseFormula": "1.5 mg/kg",
+        "dosePorKg": 1.5,
+        "notes": "Atenua a tosse e a resposta à intubação. Importante para pacientes com HIC ou broncoespasmo.",
+        "preferredIn": ["hic_tce", "broncoespasmo"]
+    },
+    {
         "id": "etomidato",
         "nome": "Etomidato",
         "categoria": "2 INDUÇÃO/SEDAÇÃO",

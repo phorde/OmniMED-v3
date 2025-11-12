@@ -1,4 +1,4 @@
-# OmniMED v3 - Aplicacao de Suporte Clinico para Medicina de Emergencia
+# OmniMED - Aplicacao de Suporte Clinico para Medicina de Emergencia
 
 [![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/phorde/OmniMED-v3)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
