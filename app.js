@@ -8,8 +8,8 @@ const medicamentosIOT = [
         "categoria": "1 PRÉ-MEDICAÇÃO",
         "concentracaoTexto": "50 mcg/mL",
         "concentracaoMgMl": 0.05,
-        "doseFormula": "3 mcg/kg",
-        "dosePorKg": 0.003,
+        "doseFormula": "2 mcg/kg",
+        "dosePorKg": 0.002,
         "notes": "Pode atenuar a resposta simpática à laringoscopia. Útil em HIC e doença cardiovascular.",
         "preferredIn": ["hic_tce", "doenca_cv"]
     },
@@ -45,9 +45,9 @@ const medicamentosIOT = [
         "concentracaoTexto": "50 mg/mL",
         "concentracaoMgMl": 50,
         "doseFormula": "1-2 mg/kg",
-        "dosePorKg": 1.5,
+        "dosePorKg": 2,
         "doseFormulaAjustada": "1 mg/kg",
-        "dosePorKgAjustada": 1.0,
+        "dosePorKgAjustada": 1.5,
         "doseAdjustmentIn": ["choque"],
         "notes": "Propriedades broncodilatadoras e analgésicas. Preserva o drive respiratório.",
         "preferredIn": ["choque", "broncoespasmo"],
@@ -59,7 +59,7 @@ const medicamentosIOT = [
         "categoria": "2 INDUÇÃO/SEDAÇÃO",
         "concentracaoTexto": "1% (10 mg/mL)",
         "concentracaoMgMl": 10,
-        "doseFormula": "1.5-3 mg/kg",
+        "doseFormula": "1.5 mg/kg",
         "dosePorKg": 1.5,
         "notes": "Rápido início. Causa vasodilatação e hipotensão. Bom para broncoespasmo e status epilepticus.",
         "contraindicatedIn": ["choque"],
@@ -71,8 +71,8 @@ const medicamentosIOT = [
         "categoria": "2 INDUÇÃO/SEDAÇÃO",
         "concentracaoTexto": "5 mg/mL",
         "concentracaoMgMl": 5,
-        "doseFormula": "0.2-0.3 mg/kg",
-        "dosePorKg": 0.2,
+        "doseFormula": "0.1-0.3 mg/kg",
+        "dosePorKg": 0.15,
         "notes": "Pode causar hipotensão significativa. Início de ação mais lento.",
         "contraindicatedIn": ["choque"]
     },
@@ -82,8 +82,8 @@ const medicamentosIOT = [
         "categoria": "3 BLOQUEIO NEUROMUSCULAR",
         "concentracaoTexto": "10 mg/mL",
         "concentracaoMgMl": 10,
-        "doseFormula": "1.5 mg/kg",
-        "dosePorKg": 1.5,
+        "doseFormula": "1 mg/kg",
+        "dosePorKg": 1,
         "notes": "Início em 45-60s, duração 6-10 min. Agente de escolha na ausência de contraindicações.",
         "contraindicatedIn": ["risco_hipercalemia"]
     },
@@ -93,8 +93,8 @@ const medicamentosIOT = [
         "categoria": "3 BLOQUEIO NEUROMUSCULAR",
         "concentracaoTexto": "10 mg/mL",
         "concentracaoMgMl": 10,
-        "doseFormula": "1.5 mg/kg",
-        "dosePorKg": 1.5,
+        "doseFormula": "1.2 mg/kg",
+        "dosePorKg": 1.2,
         "notes": "Início em 45-60s, duração ~45 min. Alternativa quando Succinilcolina é contraindicada. Reversível com Sugammadex.",
         "preferredIn": ["risco_hipercalemia"]
     }
@@ -104,9 +104,7 @@ const sedoanalgesiaData = [
     {
         "id": "fentanil_sedacao",
         "nome": "Fentanil",
-    "diluicao": "Fentanil (50 µg/mL) 50 mL + 50 mL SF 0,9% EV [ 1 mL = 25 µg ]"        "concentracaoFinal": "10 mcg/mL",
-        "infusaoMlH": "Iniciar a 5-8 ml/h.",
-        "alternativa": "OU 4 frascos (2000mcg) PURO, em Bomba de Infusão (BIC).",
+            "diluicao": "Fentanil (50mcg/ml) 20ml + 80ml de SF 0,9%.",        "infusaoMlH": "Iniciar a 5-8 ml/h.",
         "doseFormula": "0,7 a 2 mcg/kg/h",
         "doseMin": 0.7,
         "doseMax": 2,
@@ -115,8 +113,7 @@ const sedoanalgesiaData = [
     {
         "id": "midazolam_sedacao",
         "nome": "Midazolam",
-    "diluicao": "Midazolam (5 mg/mL) 20 mL + 80 mL SF 0,9% EV [ 1 mL = 1 mg ]"        "concentracaoFinal": "2 mg/mL",
-        "infusaoMlH": "Iniciar a 5-8 ml/h.",
+            "diluicao": "Midazolam (5mg/ml) 20ml + 80ml de SF 0,9%.",        "infusaoMlH": "Iniciar a 5-8 ml/h.",
         "doseFormula": "0,02 a 0,2 mg/kg/h",
         "doseMin": 0.02,
         "doseMax": 0.2,
@@ -126,26 +123,23 @@ const sedoanalgesiaData = [
     {
         "id": "cetamina_sedacao",
         "nome": "Cetamina",
-    "diluicao": "Cetamina (50 mg/mL) 10 mL + 240 mL SF 0,9% EV [ 1 mL = 2 mg ]"        "concentracaoFinal": "5 mg/mL",
-        "infusaoMlH": "Iniciar EV em BIC a 3-6 ml/h.",
+            "diluicao": "Cetamina (50 mg/mL) 10 mL + 240 mL SF 0,9% EV",        "infusaoMlH": "Iniciar EV em BIC a 3-6 ml/h.",
+        "doseFormula": "0,3 a 1 mg/kg/h",
+        "doseMin": 0.3,
+        "doseMax": 1,
+        "unidade": "mg"
+    },
+    {
+        "id": "fenta_mida_sedacao",
+        "nome": "💡 Dica para Baixa Disponibilidade de Bombas",
+            "diluicao": "Fentanil (50mcg/ml) 25ml + Midazolam (5mg/ml) 50ml + 175ml SF 0,9% EV",        "infusaoMlH": "Iniciar EV em BIC a 3-6 ml/h.",
         "doseFormula": "0,3 a 1 mg/kg/h",
         "doseMin": 0.3,
         "doseMax": 1,
         "unidade": "mg"
     }
-      ,
-    {
-      "id": "dexmedetomidina_sedacao",
-      "nome": "Dexmedetomidina",
-      "diluicao": "Dexmedetomidina (100 µg/mL) 2 mL + 48 mL SF 0,9% EV [ 1 mL = 4 µg ]",
-      "infusaoMlH": "Iniciar a 0.5-1 mL/h.",
-      "alternativa": "",
-      "doseFormula": "0,5 a 1,4 µg/kg/h",
-      "doseMin": 0.5,
-      "doseMax": 1.4,
-      "unidade": "µg"
-    }
-];
+]
+;
 
 const contextosClinicosData = [
     {

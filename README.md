@@ -28,7 +28,7 @@
 
 ## Visao Geral
 
-OmniMED v3 eh uma aplicacao web desenvolvida para profissionais de saude em unidades de pronto atendimento (UPA) e unidades de terapia intensiva (UTI). A ferramenta fornece:
+OmnieMED.io eh uma aplicacao web desenvolvida para profissionais de saude em unidades de pronto atendimento (UPA) e unidades de terapia intensiva (UTI). A ferramenta fornece:
 
 - **Calculos farmacologicos precisos** baseados no peso do paciente
 - **Recomendacoes contextualizadas** de medicacoes conforme cenarios clinicos

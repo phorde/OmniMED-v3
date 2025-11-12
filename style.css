@@ -996,7 +996,7 @@ body {
 }
 
 /* Clinical context */
-.clinical-context {
+.clinical-context-dropdown {
   margin-bottom: var(--space-24);
 }
 
